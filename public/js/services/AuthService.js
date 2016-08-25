@@ -27,11 +27,11 @@
       }
     };
     function saveToken(token){
-      $window.localStorage['mean-token'] = token;
+      $window.localStorage['quizme-token'] = token;
       console.log($window.localStorage);
     };
     function getToken(){
-      return $window.localStorage['mean-token'];
+      return $window.localStorage['quizme-token'];
     }
     function isLoggedIn(){
       var token = getToken();
@@ -56,7 +56,7 @@
                   });
     }
     function logout(){
-      $window.localStorage.removeItem('mean-token');
+      $window.localStorage.removeItem('quizme-token');
     }
   }
 }());
