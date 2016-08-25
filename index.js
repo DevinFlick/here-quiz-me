@@ -12,5 +12,5 @@ server.get('/', function(req, res, next){
 });
 
 server.listen(port, function(){
-  console.log("Now listening my man! on port" + port);
+  console.log("Now listening my man! On port..." + port);
 });

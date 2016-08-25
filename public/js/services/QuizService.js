@@ -5,7 +5,7 @@
   QuizService.$inject = ['$http'];
 
   function QuizService($http){
-    var baseUrl = 'base/quizzes';
+    var baseUrl = 'https://quiz-base.herokuapp.com/quizzes/';
 
     var service = {
       getAllQuizzes: getAllQuizzes,

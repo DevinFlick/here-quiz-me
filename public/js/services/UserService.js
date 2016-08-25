@@ -5,7 +5,7 @@
   UserService.$inject = ['$http'];
 
   function UserService($http){
-    var baseUrl = 'needs heroku URL/users/'
+    var baseUrl = 'https://quiz-base.herokuapp.com/users/';
     var service = {
       getAllUsers: getAllUsers,
       createUser: createUser,
