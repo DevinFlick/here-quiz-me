@@ -1,10 +1,11 @@
 (function() {
   angular.module('ngQuiz')
           .controller('navbarController', navbarController);
+navbarController.$inject = ['$scope', '$location'];
 
-  navbarController.$inject = ['$scope'];
-
-  function navbarController($scope){
-    $scope.message = 'Hey! Angular Works!';
-  }
+function navbarController($scope, $location){
+  $scope.isActive = function (viewLocation){
+    return viewLocation === $location.path();
+  };
+};
 }());

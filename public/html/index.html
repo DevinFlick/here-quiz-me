@@ -7,11 +7,16 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <nav class="navbar navbar-default" ng-controller='navbarController'></nav>
+
+  <navbar></navbar>
+
   <div ng-controller='SimpleController'>
     {{message}}
   </div>
-<div ng-view class='container'></div>
+
+  <div ng-view class='container'></div>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
   <script src="js/app.js"></script>
