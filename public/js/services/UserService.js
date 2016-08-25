@@ -6,9 +6,11 @@
 
   function UserService($http){
     var baseUrl = 'https://quiz-base.herokuapp.com/users/';
+    var signUpUrl = 'https://quiz-base.herokuapp.com/signup/';
+    
     var service = {
       getAllUsers: getAllUsers,
-      createUser: createUser,
+      signUp: signUp,
       getOneUser: getOneUser,
       updateUser: updateUser,
       deleteUser: deleteUser,
@@ -18,8 +20,8 @@
     function getAllUsers(){
       return $http.get(baseUrl);
     };
-    function createUser(userObj){
-      return $http.post(baseUrl, userObj);
+    function signUp(userObj){
+      return $http.post(signUpUrl, userObj);
     };
     function getOneUser(userId){
       return $http.get(baseUrl + userId);

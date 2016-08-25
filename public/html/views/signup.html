@@ -4,32 +4,45 @@
       <div class='col-md-offset-2 col-md-8'>
         <div class="jumbotron solidgreenborder text-center">
           <h2>Quiz Me!</h2>
+          <div class="alert alert-danger" ng-show='error'>
+            <p>Please make sure that your passwords match!</p>
+          </div>
           <div class="row">
             <div class="col-md-4">
-              <h3>First Name:</h3>
-              <input type="text" placeholder="First Name">
+              <div class="form-group">
+                <label>Username:</label>
+                <input type="text" class='form-control' placeholder="Username" ng-model='user.username'>
+              </div>
             </div>
             <div class="col-md-4">
-              <h3>Last Name:</h3>
-              <input type="text" placeholder="Last Name">
+              <div class="form-group">
+                <label>Email:</label>
+                <input type="email" class='form-control' placeholder="email@domain.com" ng-model='user.email'>
+              </div>
             </div>
             <div class="col-md-4">
-              <h3>Age:</h3>
-              <input type="number" placeholder="18">
+              <div class="form-group">
+                <label>Age:</label>
+                <input type="number" class='form-control' placeholder="18" ng-model='user.age'>
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-6">
-              <h3>Email:</h3>
-              <input type="Email" placeholder="Email@domain.com">
+              <div class="form-group">
+                <label>Password:</label>
+                <input type="password" class='form-control' ng-model='user.password'>
+              </div>
             </div>
             <div class="col-md-6">
-              <h3>Password:</h3>
-              <input type="text" placeholder="password123!@#">
+              <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" class='form-control' ng-model='confirm.password'>
+              </div>
             </div>
           </div>
           <div class="row">
-
+            <div class="btn btn-primary btn-block" ng-click='signUp(user, confirm)'>Signup!</div>
           </div>
         </div>
       </div>
