@@ -34,8 +34,12 @@
       templateUrl:'html/views/updatequiz.html',
       controller: 'QuizController',
     })
-    .when('/takequiz', {
+    .when('/takequiz/:quizName', {
       templateUrl:'html/views/takequiz.html',
+      controller: 'TakeQuizController',
+    })
+    .when('/showquestions', {
+      templateUrl: 'html/views/showquestions.html',
       controller: 'QuestionController',
     })
     .otherwise({

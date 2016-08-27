@@ -13,6 +13,6 @@ function navbarController($scope, $location, AuthService){
 
   function logout(){
     AuthService.logout();
-  }; //done for future functionality
-};
+  } //done for future functionality
+}
 }());

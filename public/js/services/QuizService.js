@@ -20,18 +20,18 @@
 
     function getAllQuizzes(){
       return $http.get(baseUrl);
-    };
+    }
     function getAQuiz(quizId){
       return $http.get(baseUrl + quizId);
-    };
-    function getRandomNumberOfQuizzes(){};
-    function getTheMostRecentNumberOfQuizzes(){};
+    }
+    function getRandomNumberOfQuizzes(){}
+    function getTheMostRecentNumberOfQuizzes(){}
     function createQuiz(quizObj){
       return $http.post(baseUrl, postObj);
-    };
+    }
     function updateQuiz(quizId, updateQuizObj){
       return $http.put(baseUrl + postId, updateQuizObj);
-    };
+    }
     function deleteQuiz(quizId){
       return $http.delete(baseUrl + postId);
     }
