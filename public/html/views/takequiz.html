@@ -7,7 +7,15 @@
         <div class="well row forest-green-background text-color">
           <h3>{{question.quiz}}</h3>
           <h4>Question: {{question.ask}}</h4>
-          <h5 ng-repeat='answer in question.answers'>{{answer}}</h5>
+          <div ng-repeat='answer in question.answers'>
+            <label>
+              <input type='radio' ng-model='question.answer' ng-value='{{answer}}'>
+              {{answer}}
+            </label>
+          <div>
+
+          </div>
+          </div>
         </div>
       </div>
     </div>
